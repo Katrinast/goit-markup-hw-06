@@ -715,7 +715,6 @@ pointer-events: auto;
 }
 
 .modal {
-  /*width: 408px;*/
   min-height: 584px;
   width: 288px;
   border-radius: 4px;
@@ -725,7 +724,6 @@ pointer-events: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /*padding: 72px 24px 24px;*/
   padding: 72px 16px 24px;
   transition-property: transform;
   transition-duration: 250ms;
@@ -863,6 +861,7 @@ position: absolute;
 }
 
 .label-checkbox {
+  display: flex;
   color: #8E8F99;
     font-size: 12px;
     line-height: 1.17;
@@ -876,6 +875,7 @@ position: absolute;
 
 .form-span {
   display: inline-flex;
+  margin-right: 8px;
   width: 16px;
   height: 16px;
   border: 1px solid  rgba(46, 47, 66, 0.40);
@@ -1065,6 +1065,13 @@ text-align: left;
   width: 264px;
 }
 
+}
+
+/*---------backdrop---------*/
+
+.modal {
+width: 408px;
+padding: 72px 24px 24px;
 }
 
 
