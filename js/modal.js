@@ -23,4 +23,11 @@
     refs.modal.classList.toggle('is-hidden');
     document.body.classList.toggle('no-scroll');
   }
+  document.querySelector(".section-hero-button").addEventListener("click", toggleOrderServiceModal);
+	document.querySelector(".modal-close-btn").addEventListener("click", toggleOrderServiceModal);
+
+	function toggleOrderServiceModal() {
+        document.querySelector(".backdrop").classList.toggle("is-open");
+        document.body.classList.toggle("no-scroll");
+	}
 })();

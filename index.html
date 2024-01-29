@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="header">
+  <header class="header">
     <div class="container header-container">
     <nav class="navigation">
     <a class="logo" href="./index.html">Web<span class="logo-item">Studio</span></a>
@@ -35,14 +35,14 @@
             </li>
       </ul>
     </address>
-    <button class="header-open-btn" type="button">
+    <button class="header-open-btn is-open" type="button" data-modal-open>
       <svg class="header-icon-menu" width="24" height="24">
         <use href="./images/icons.svg#icon-menu"></use>
       </svg>
     </button>
     </div>
-    <div class="mob-menu is-open">
-      <button class="mob-close-btn" type="button">
+    <div class="mob-menu is-hidden" data-modal>
+      <button class="mob-close-btn" type="button" data-modal-close>
         <svg class="mob-icon-close" width="8" height="8">
           <use href="./images/icons.svg#icon-close-black"></use>
         </svg>
@@ -112,7 +112,7 @@
       Effective Solutions
       for Your Business
     </h1>
-    <button class="section-hero-button" type="button" data-modal-open>Order Service</button>
+    <button class="section-hero-button is-open" type="button">Order Service</button>
     </div>
     </section>
     <section class="advantages">
