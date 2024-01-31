@@ -259,6 +259,7 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 max-width: 1440px;
+margin: 0 auto;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -723,7 +724,7 @@ pointer-events: auto;
 
 .modal {
   min-height: 584px;
-  width: 288px;
+  width: calc(100%-32px);
   border-radius: 4px;
   background-color: #FCFCFC;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
@@ -1032,12 +1033,12 @@ padding: 0;
 /*---------footer---------*/
 
 .footer {
-  padding-left: 108px;
 }
 
 .footer-container {
   flex-direction: row;
   flex-wrap: wrap;
+  max-width: 584px;
   gap: 72px 24px;
 }
 
@@ -1071,15 +1072,13 @@ text-align: left;
   width: 264px;
 }
 
-}
-
 /*---------backdrop---------*/
 
 .modal {
 width: 408px;
 padding: 72px 24px 24px;
 }
-
+}
 
 /*------------------------------*/
 
